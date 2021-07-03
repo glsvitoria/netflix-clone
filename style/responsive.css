@@ -1,0 +1,32 @@
+@media screen and (max-width: 800px) {
+   header .container .menu nav {
+      display: none;
+      visibility: hidden;
+   }
+
+   header .user {
+      width: 25%;
+   }
+
+   .destaque .container .title {
+      font-size: 7.5rem;
+   }
+
+   .destaque .container .subtitle {
+      font-size: 1.6rem;
+   }
+
+   .destaque .container .description{
+      font-size: 1.2rem;
+   }
+
+   main .carousel-films {
+      top: 92.5vh;
+   }
+}
+
+@media screen and (max-width: 1000px){
+   main .carousel-films {
+      top: 91vh;
+   }
+}

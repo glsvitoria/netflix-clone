@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+@font-face {
+   font-family: 'Dead Stock';
+   src: url('../fonts/Dead\ Stock\ -\ Demo.ttf') format('opentype');
+}
+
+/* VARIÁVEIS */
+:root {
+   --black: #0D0D0D;
+   --red: #E50914;
+   --background-black: #141414;
+   --grey: #bdbdbd;
+
+   --font-netflix: 'Bebas Neue', cursive;
+   --font-cobra-kay: 'Dead Stock', sans-serif;
+   --font-top-10: 'Roboto Mono', monospace;
+}
+
+/* RESET */
+*{
+   margin: 0;
+   padding: 0;
+   color: black;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+body {
+   background: var(--background-black);
+   color: white;
+   width: 100%;
+}
+
+/* CABEÇALHO */
+header .container {
+   align-items: center;
+   background-image: linear-gradient(var(--black), rgba(0, 0, 0, 0));
+   display: flex;
+   position: fixed;
+   justify-content: space-between;
+   padding: 1rem 2rem;
+   width: 100%;
+}
+
+header .container .menu h2.logo {
+   color: var(--red);
+   font-weight: 200;
+   font-size: 2.4rem;
+   font-family: var(--font-netflix);
+   margin-left: 2rem;
+   margin-right: 3rem;
+}
+
+header .container .menu nav a {
+   color: var(--grey);
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   margin-right: 1.2rem;
+}
+
+header .container .menu nav a:last-child {
+   margin-right: 0;
+}
+
+header .container .menu nav a.active,
+header .container nav a:hover {
+   color: white;
+}
+
+header .menu {
+   display: flex;
+   align-items: center;
+} 
+
+header .user {
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   
+   width: 12%;
+   margin-right: 2rem;
+}
+
+header .user i, .container-muted i {
+   color: white;
+   font-size: 1.4rem;
+}
+
+header .user .icon-notifications {
+   font-size: 2rem;
+}
+
+header .user .image-user {
+   border-radius: .2rem;
+   width: 2.4rem;
+}
+
+header .user .perfil {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 4rem;
+}
+
+/* FILME EM DESTAQUE */
+
+.destaque {
+   background: url('https://image.tmdb.org/t/p/original/xWmDBmsabRm6IE5FcfU9CTQCPtl.jpg') no-repeat top / cover;
+   color: white;
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+
+   height: 100vh;
+   width: 100%;
+   padding: 30vh 0 35vh 4vw;
+}
+
+.destaque .container .feature-destaque {
+   align-items: center;
+   display: flex;
+}
+
+.destaque .container .feature-destaque p {
+   color: var(--grey);
+   text-shadow: 0 0 3px black;
+   font-family: var(--font-netflix);
+   font-size: 2rem;
+   font-weight: bold;
+   letter-spacing: .6rem;
+
+   height: 2.4rem;
+}
+
+
+.destaque .container .logo-description {
+   width: 3.2rem;
+   margin-left: -.4rem;
+}
+
+.destaque .container .title {
+   color: white;
+   font-size: 7rem;
+   font-family: var(--font-cobra-kay);
+   font-weight: 300;
+   text-shadow: 0 0 4px black;
+   text-transform: uppercase;
+   line-height: 80%;
+
+   margin: 1.6rem 0;
+   width: 80%;
+}
+
+.destaque .container .description,
+.destaque .container .subtitle {
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 1.5rem;
+   text-shadow: 0 0 4px black;
+
+   margin-bottom: 1.6rem;
+   width: 40%;
+}
+
+.destaque .container .subtitle {
+   font-size: 1.8rem;
+   margin-bottom: 1.2rem;
+}
+
+.container-age {
+   background: rgba(49, 49, 49, 0.50);
+
+   position: absolute;
+   right: 0;
+   top: 70%;
+   height: 38.385px;
+
+   padding: 0 4rem 0 1rem;
+
+   border-left: 5px solid white;
+}
+
+.container-age .age-limit {
+   width: 2.4rem;
+}
+
+.container-muted {
+   position: absolute;
+
+   top: 73%;
+   right: 9.5%;
+}
+
+.container-muted i {
+   font-size: 1.1rem;
+
+   border: 2px solid white;
+   border-radius: 100%;
+
+   padding: .6rem;
+
+   transition: all .2s;
+}
+
+.container-muted i:hover {
+   background: rgba(110, 110, 110, 0.6);
+   cursor: pointer;
+}
+
+/* BUTTONS */
+.destaque .buttons .button {
+   border: none;
+   border-radius: .4rem;
+   color: black;
+   font-size: 1.4rem;
+
+   padding: 0.8rem 1.4rem;
+   margin-right: 0.8rem;
+
+   cursor: pointer;
+   transition: background .2s;
+}
+
+.destaque .buttons .button:hover {
+   background: var(--grey);
+}
+
+.destaque .buttons .button:last-child, .destaque .buttons .icon-info {
+   background-color: rgba(109, 109, 110, 0.7);
+   color: white;
+
+   margin-right: 0rem;
+}
+
+.destaque .buttons .button:last-child:hover {
+   background-color: #747474;
+}
+
+/* CAROUSEL */
+
+main section.minha-lista{
+   position: absolute;
+   width: 96%;
+   margin-left: 4%;
+
+   top: 90vh;
+}
+
+main h3 {
+   color: white;
+   font-size: 1.4rem;
+   font-family: Arial, Helvetica, sans-serif;
+
+   margin-bottom: .8rem;
+}
+
+.box-film {
+   border-radius: .4rem;
+
+   height: 100%;
+   width: 100%;
+
+   display: block;
+
+   cursor: pointer;
+}
+
+main section.so-na-netflix {
+   position: absolute;
+   width: 96%;
+   margin-left: 4%;
+
+   top: 128vh;
+}
+
+main section.top-10 {
+   position: absolute;
+   width: 96%;
+   margin-left: 4%;
+
+   top: 220vh;
+}
+
+main section.top-10 .item {
+   display: flex;
+   flex-direction: row;
+   height: 13rem;
+}
+
+main section.top-10 .item img {
+   width: 9.3rem;
+}
+
+main section.top-10 .item p {
+   font-size: 18rem;
+   font-family: var(--font-top-10);
+   width: 7.2rem;
+   margin-top: -6rem;
+
+   /*Contorno*/
+   -webkit-text-stroke-width: .25rem;
+   -webkit-text-stroke-color: #909090;
+}
