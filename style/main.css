@@ -42,6 +42,12 @@ header .container {
    justify-content: space-between;
    padding: 1rem 2rem;
    width: 100%;
+
+   z-index: 999;
+}
+
+header .container.scroll {
+   background-image: linear-gradient(rgb(32, 32, 32), rgb(20, 20, 20));
 }
 
 header .container .menu h2.logo {

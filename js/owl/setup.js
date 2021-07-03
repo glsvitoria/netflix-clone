@@ -14,3 +14,22 @@ $('.owl-carousel').owlCarousel({
        }
    }
 })
+
+const destaque = document.querySelector('div.destaque')
+const navHeight = destaque.offsetHeight
+
+const header = document.querySelector('#header .container')
+
+function changeHeaderWhenScroll() {
+  if (window.scrollY >= navHeight) {
+    // scroll é maior que a altura do header
+    header.classList.add('scroll')
+  } else {
+    // menor que a altura do header
+    header.classList.remove('scroll')
+  }
+}
+
+window.addEventListener('scroll', function () {
+    changeHeaderWhenScroll()
+  })
