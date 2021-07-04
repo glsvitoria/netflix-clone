@@ -38,7 +38,7 @@
  2. Pode-se também passar entre as séries já adicionadas ao carrosel do site
 
 ### Screenshot
-![](./image/Screenshot.png)
+![](./image/Screenshot.PNG)
 ### Links
 - Site hospedado: [Netflix-Clone](link)
 
