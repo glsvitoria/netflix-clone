@@ -196,8 +196,6 @@ header .user .perfil {
    top: 70%;
    height: 38.385px;
 
-   padding: 0 4rem 0 1rem;
-
    border-left: 5px solid white;
 }
 
@@ -209,7 +207,6 @@ header .user .perfil {
    position: absolute;
 
    top: 73%;
-   right: 9.5%;
 }
 
 .container-muted i {
@@ -267,10 +264,6 @@ main section.top-10 {
    margin-right: 2%;
 }
 
-main section.minha-lista{
-   top: 90vh;
-}
-
 main h3 {
    color: white;
    font-size: 1.4rem;
@@ -290,18 +283,11 @@ main h3 {
    cursor: pointer;
 }
 
-main section.so-na-netflix {
-   top: 128vh;
-}
-
-main section.top-10 {
-   top: 220vh;
-}
-
 main section.top-10 .item {
    display: flex;
    flex-direction: row;
    height: 13rem;
+   justify-content: space-between;
 }
 
 main section.top-10 .item img {
