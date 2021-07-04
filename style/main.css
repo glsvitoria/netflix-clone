@@ -44,10 +44,13 @@ header .container {
    width: 100%;
 
    z-index: 999;
+
+   transition: all 1s;
 }
 
 header .container.scroll {
    background-image: linear-gradient(rgb(32, 32, 32), rgb(20, 20, 20));
+   transition: all 1s;
 }
 
 header .container .menu h2.logo {
