@@ -40,7 +40,7 @@
 ### Screenshot
 ![](./image/Screenshot.PNG)
 ### Links
-- Site hospedado: [Netflix-Clone](link)
+- Site hospedado: [Netflix-Clone](https://glsvitoria.github.io/netflix-clone/)
 
 ## Processo
 
