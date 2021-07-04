@@ -111,9 +111,17 @@ header .user .perfil {
 }
 
 /* FILME EM DESTAQUE */
+.image-start {
+   -webkit-mask-image: linear-gradient(to top, transparent, var(--background-black) 20vh);
+   background: url('https://image.tmdb.org/t/p/original/xWmDBmsabRm6IE5FcfU9CTQCPtl.jpg') no-repeat top / cover;
+   position: absolute;
+   height: 100vh;
+   width: 100%;
+
+   z-index: -1;
+}
 
 .destaque {
-   background: url('https://image.tmdb.org/t/p/original/xWmDBmsabRm6IE5FcfU9CTQCPtl.jpg') no-repeat top / cover;
    color: white;
 
    display: flex;
@@ -141,7 +149,6 @@ header .user .perfil {
 
    height: 2.4rem;
 }
-
 
 .destaque .container .logo-description {
    width: 3.2rem;
@@ -248,12 +255,16 @@ header .user .perfil {
 }
 
 /* CAROUSEL */
-
-main section.minha-lista{
+main section.minha-lista,
+main section.so-na-netflix,
+main section.top-10 {
    position: absolute;
    width: 96%;
-   margin-left: 4%;
+   margin-left: 2%;
+   margin-right: 2%;
+}
 
+main section.minha-lista{
    top: 90vh;
 }
 
@@ -277,18 +288,10 @@ main h3 {
 }
 
 main section.so-na-netflix {
-   position: absolute;
-   width: 96%;
-   margin-left: 4%;
-
    top: 128vh;
 }
 
 main section.top-10 {
-   position: absolute;
-   width: 96%;
-   margin-left: 4%;
-
    top: 220vh;
 }
 
