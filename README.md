@@ -52,7 +52,7 @@
 [<img src="https://img.shields.io/static/v1?label=&message=Jquery&color=blue&style=for-the-badge&logo=Jquery&logoColor=white" />](https://github.com/glsvitoria)
 
 ### O que eu aprendi
- - Utilização do framework Jquery para colocar um carrosel
+ - Utilização da biblioteca Jquery - Owl Carousel para colocar um carrosel
  - Posicionamento melhor dos itens usando o position absolute
  - Pegar imagens no próprio site da Netflix pelo inspecionar elemento
 
