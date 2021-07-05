@@ -22,18 +22,6 @@
 }
 
 @media screen and (min-width: 0) {
-   main section.minha-lista {
-      top: 100%;
-   }
-
-   main section.so-na-netflix {
-      top: 136%;
-   }
-
-   main section.top-10 {
-      top: 225%;
-   }
-
    .container-age {
       padding: 0 2rem 0 1rem;
    }
@@ -43,97 +31,12 @@
    }
 }
 
-@media screen and (min-width: 600px) {
-   main section.minha-lista {
-      top: 94%;
-   }
-
-   main section.so-na-netflix {
-      top: 126%;
-   }
-
-   main section.top-10 {
-      top: 198%;
-   }
-
-}
-
-@media screen and (min-width: 700px) {
-   main section.top-10 {
-      top: 198%;
-   }
-   main section.top-10 {
-      top: 205%;
-   }
-}
-
-
-
 @media screen and (min-width: 800px) {
-   main section.minha-lista {
-      top: 98%;
-   }
-
-   main section.so-na-netflix {
-      top: 136%;
-   }
-
-   main section.top-10 {
-      top: 208%;
-   }
-
    .container-age {
       padding: 0 4rem 0 1rem;
    }
 
    .container-muted {
-      right: calc(38.385px + 4rem + 4rem);
-   }
-}
-
-@media screen and (min-width: 900px) {
-   main section.minha-lista {
-      top: 92%;
-   }
-
-   main section.so-na-netflix {
-      top: 130%;
-   }
-
-   main section.top-10 {
-      top: 210%;
-   }
-
-}
-
-@media screen and (min-width: 1000px) {
-   main section.minha-lista {
-      top: 88%;
-   }
-
-   main section.so-na-netflix {
-      top: 124vh;
-   }
-
-   main section.top-10 {
-      top: 194%;
-   }
-}
-
-@media screen and (min-width: 1100px) {
-   main section.top-10 {
-      top: 198%;
-   }
-}
-
-@media screen and (min-width: 1200px) {
-   main section.top-10 {
-      top: 210%;
-   }
-}
-
-@media screen and (min-width: 1300px) {
-   main section.top-10 {
-      top: 212%;
+      right: calc(38.385px + 4rem + 2rem);
    }
 }

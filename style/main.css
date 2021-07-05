@@ -258,10 +258,13 @@ header .user .perfil {
 main section.minha-lista,
 main section.so-na-netflix,
 main section.top-10 {
-   position: absolute;
    width: 96%;
    margin-left: 2%;
    margin-right: 2%;
+}
+
+main section.minha-lista {
+   margin-top: -6%;
 }
 
 main h3 {
